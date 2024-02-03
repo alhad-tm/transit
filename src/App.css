@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.button-layout{
+  @apply h-[60px] w-[350px] bg-red-300
+}
+
+.sub-heading{
+  @apply font-primary font-semibold text-4xl text-black
+}
