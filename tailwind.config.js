@@ -15,9 +15,14 @@ module.exports = {
       },
       colors: {
         'blacked': '#1C1F35',
-        "yellowed":"#FFB629"
+        "yellowed":"#FFB629",
+        "button-text":"#23212A"
+      
+      }, 
+      backgroundImage: {
+        'yellow-gradient': 'linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)',
       },
     },
   },
-  plugins: [],
-}
+  plugins: [],   
+} 

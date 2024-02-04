@@ -1,98 +1,4 @@
-// import React from 'react'
-// import LeftArrow from "../../assets/left-arow.svg"
-// import RightArrow from "../../assets/right-arrow.svg"
-// import Star from "../../assets/star.png"
-// import User1 from "../../assets/user1.png"
-// import User2 from "../../assets/user-2.png"
-// import Quotes from "../../assets/quotes.png"
-
-// const Testimonial = () => {
-//   return (
-//     <div className="flex items-center justify-center bg-white min-h-screen w-full">
-      
-//  <div className="flex flex-col items-center justify-center w-full max-w-max">
-
-
-// {/* top */}
-
-// <div className="flex flex-col md:flex-row items-center justify-between w-full">
-//     <div className="flex flex-col">
-//     <div className="flex w-[350px] h-[30px]">
-//                 <div className="w-[4%] bg-yellow-200"></div>
-//                 <div className="bg-[#E8E8E880]">
-//                 <span className="text-black">Testimonials</span>
-//                 </div>
-               
-//             </div>
-
-
-// <span className="sub-heading">What Our Customer Say</span>
-
-//     </div>
-
-
-//     <div className="flex items-center gap-2">
-//         <img src={LeftArrow}/>
-//         <img src={RightArrow}/>
-//     </div>
-
-
-
-
-
-// </div>
-
-// {/* bottom */}
-
-// <div className="flex items-center justify-between w-full ">
-//     <div className="w-1/2 h-[350px] flex flex-col bg-gray-400 justify-around">
-
-//  <div className="flex justify-between">
-//     <div className="flex">
-//         <img  src={User1} alt='user1'/>
-//         <div className="flex flex-col">
-//             <span>Name</span>
-//             <span>Position</span>
-//         </div>
-//     </div>
-
-//     <div>
-//         <img src={Quotes}/>
-//     </div>
-//  </div>
-
-//  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam ipsum quia beatae corporis dolores eius minima, obcaecati ipsa suscipit fugit earum doloribus necessitatibus quasi perspiciatis eaque cumque ratione magni?</span>
-
-// <div className="flex gap-2">
-// <img src={Star} alt='star'/>
-// <img src={Star} alt='star'/>
-// <img src={Star} alt='star'/>
-// <img src={Star} alt='star'/>
-// <img src={Star} alt='star'/>
-
-
-// </div>
-
-//     </div>
-// </div>
-
-
-
-//  </div>
-
-//     </div>
-//   )
-// }
-
-// export default Testimonial
-
-
-
-
-
-
-
-import React from 'react';
+import React from "react";
 import LeftArrow from "../../assets/left-arow.svg";
 import RightArrow from "../../assets/right-arrow.svg";
 import Star from "../../assets/star.png";
@@ -104,35 +10,40 @@ const testimonialData = [
   {
     id: 1,
     userImage: User1,
-    userName: 'John Doe',
-    userPosition: 'CEO',
-    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    userName: "Kathleen Smith",
+    userPosition: "Fuel Company",
+    quote:
+      "Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
     stars: 5,
-    color:"bg-gray-200",
+    color: "bg-gray-200",
+    text: "text-[#091242]",
   },
   {
     id: 2,
     userImage: User2,
-    userName: 'John Doe',
-    userPosition: 'CEOnn',
-    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
-    stars: 4,
-    color:"bg-blue-900"
+    userName: "John Martin",
+    userPosition: "Restoration Compnay",
+    quote:
+      "Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+    stars: 5,
+    color: "bg-blue-900",
+
+    text: "text-white",
   },
-  // Add more testimonials as needed
 ];
 
 const Testimonial = () => {
   return (
     <div className="flex items-center justify-center bg-white min-h-screen w-full">
-      <div className="flex flex-col items-center justify-center w-full max-w-max">
-        {/* top */}
+      <div className="flex flex-col gap-8 items-center justify-center w-4/5 max-w-max text-left">
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <div className="flex w-[350px] h-[30px]">
-              <div className="w-[4%] bg-yellow-200"></div>
-              <div className="bg-[#E8E8E880]">
-                <span className="text-black">Testimonials</span>
+              <div className="w-[2%] bg-yellow-gradient"></div>
+              <div className="bg-[#E8E8E880] flex items-center justify-center p-2">
+                <span className="text-[#1C1F35] text-sm font-primary font-normal">
+                  Testimonial
+                </span>
               </div>
             </div>
             <span className="sub-heading">What Our Customer Say</span>
@@ -143,17 +54,25 @@ const Testimonial = () => {
           </div>
         </div>
 
-        {/* bottom */}
-        <div className="flex items-center justify-between w-full ">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full ">
           {testimonialData.map((testimonial) => (
-            <div key={testimonial.id} 
-            className={`w-1/2 h-[350px] flex flex-col justify-around p-4 ${testimonial.color}`}>
+            <div
+              key={testimonial.id}
+              className={`w-full md:w-1/2 h-[350px] flex flex-col justify-around p-8 ${testimonial.color}`}
+            >
               <div className="flex justify-between">
-                <div className="flex">
-                  <img src={testimonial.userImage} alt={`user-${testimonial.id}`} />
-                  <div className="flex flex-col">
-                    <span>{testimonial.userName}</span>
-                    <span>{testimonial.userPosition}</span>
+                <div className="flex gap-4 items-center ">
+                  <img
+                    src={testimonial.userImage}
+                    alt={`user-${testimonial.id}`}
+                  />
+                  <div className={`flex flex-col ${testimonial.text}`}>
+                    <span className=" text-xl font-primary font-medium">
+                      {testimonial.userName}
+                    </span>
+                    <span className=" text-base font-secondary font-medium">
+                      {testimonial.userPosition}
+                    </span>
                   </div>
                 </div>
                 <div>
@@ -161,7 +80,9 @@ const Testimonial = () => {
                 </div>
               </div>
 
-              <span>{testimonial.quote}</span>
+              <span className="text-base font-medium font-secondary text-[#666C89] italic">
+                {testimonial.quote}
+              </span>
 
               <div className="flex gap-2">
                 {Array.from({ length: testimonial.stars }).map((_, index) => (
