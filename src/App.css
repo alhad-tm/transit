@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -20,8 +22,8 @@
 .sub-heading{
   @apply font-primary font-semibold text-4xl text-black
 }
-.sub-heading-white{
-  @apply font-primary font-semibold text-4xl text-white
+.sub-heading-white{ 
+  @apply font-primary font-semibold text-4xl text-white 
 }
 
 .contents{
@@ -35,3 +37,4 @@
 .navline{
   @apply bg-white bg-opacity-30 h-5 w-[1px] ml-8
 }
+ 

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+
   theme: {
     extend: {
       maxWidth: {
@@ -11,7 +12,7 @@ module.exports = {
       fontFamily: { 
         primary: ["Rubik", "sans-serif"],
         secondary: ["krub", "sans-serif"],
-        tertiary:["League Spartan', sans-serif"]
+        tertiary:["League Spartan"," sans-serif"] 
       },
       colors: {
         'blacked': '#1C1F35',
@@ -24,5 +25,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],   
+  plugins: [], 
+  mode: 'jit',  
 } 
+  

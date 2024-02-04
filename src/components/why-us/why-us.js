@@ -119,14 +119,14 @@ const WhyUs = () => {
             Transporting Across The World
           </span>
 
-          <div className="flex items-center justify-between gap-2 w-full">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2 w-full">
             {cardsArray.map((items, index) => (
               <div
                 style={{
                   backgroundImage: `url(${items.backgroundImage})`,
                 }}
                 key={index}
-                className="flex flex-col justify-end p-4 w-[18%] h-[300px] bg-center bg-cover text-left"
+                className="flex flex-col justify-end p-4 w-full  md:w-[18%] h-[300px] bg-center bg-cover text-left"
               >
                 <span className="font-primary text-white text-xl font-medium">
                   {items.title}
