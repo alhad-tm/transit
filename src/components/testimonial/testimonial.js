@@ -108,7 +108,7 @@ const testimonialData = [
     userPosition: 'CEO',
     quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
     stars: 5,
-    color:"bg-yellow-500",
+    color:"bg-gray-200",
   },
   {
     id: 2,
@@ -117,7 +117,7 @@ const testimonialData = [
     userPosition: 'CEOnn',
     quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
     stars: 4,
-    color:"bg-red-500"
+    color:"bg-blue-900"
   },
   // Add more testimonials as needed
 ];
@@ -147,7 +147,7 @@ const Testimonial = () => {
         <div className="flex items-center justify-between w-full ">
           {testimonialData.map((testimonial) => (
             <div key={testimonial.id} 
-            className={`w-1/2 h-[350px] flex flex-col justify-around ${testimonial.color}`}>
+            className={`w-1/2 h-[350px] flex flex-col justify-around p-4 ${testimonial.color}`}>
               <div className="flex justify-between">
                 <div className="flex">
                   <img src={testimonial.userImage} alt={`user-${testimonial.id}`} />

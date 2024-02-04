@@ -44,3 +44,10 @@
 .sub-heading{
   @apply font-primary font-semibold text-4xl text-black
 }
+.sub-heading-white{
+  @apply font-primary font-semibold text-4xl text-white
+}
+
+.contents{
+  @apply font-secondary font-medium text-base text-[#666C89]
+}

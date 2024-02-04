@@ -1,12 +1,46 @@
 import React from "react";
 import BannerBg from "../../assets/banner-bg.svg";
+import Header from "../header/header";
 
 const Banner = () => {
   return (
-    <div       className=" flex items-center justify-center w-full bg-center bg-cover" 
+    <div       className=" flex items-center justify-center w-full bg-center bg-cover relative mt-20" 
     style={{ backgroundImage: `url(${BannerBg})` }}
     >
     
+    {/* <div className="w-full h-[88px] flex items-center justify-between
+         bg-transparent  bg-opacity-20 backdrop-blur-sm absolute top-0">
+
+            <div className="flex items-end gap-4 ">
+
+                <span>
+                    Home
+                </span>
+                <div className="w-1 h-5 bg-white"></div>
+                <span>
+                    Home
+                </span>
+                <div className="w-1 h-5 bg-white"></div>
+                <span>
+                    Home
+                </span>
+                <div className="w-1 h-5 bg-white"></div>
+                <span>
+                    Home
+                </span>
+                <div className="w-1 h-5 bg-white"></div>
+                <span>
+                    Home
+                </span>
+                <div className="w-1 h-5 bg-white"></div>
+
+            </div>
+
+        </div> */}
+        <div className="absolute top-[-5rem] w-full ">
+          <Header/>
+
+        </div>
       <div  className="flex max-w-max w-full min-h-screen " >
        
 
@@ -36,6 +70,7 @@ to any Destination in the World</span>
 
 
       </div>
+
 
 
     </div>
