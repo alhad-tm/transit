@@ -36,14 +36,9 @@ const Team = () => {
     <div className="flex items-center justify-center bg-white w-full min-h-screen py-6">
       <div className="flex flex-col gap-8 items-center justify-center bg-white w-full min-h-screen max-w-max">
         <div className="flex flex-col items-center justify-center text-center gap-4">
-          <div className="flex w-[150px] h-[30px]">
-            <div className="w-[4%] bg-yellow-gradient"></div>
-            <div className="bg-[#E8E8E880] flex items-center justify-center p-2">
-              <span className="text-blacked text-sm font-primary font-normal">
-                The Transporters
-              </span>
-            </div>
-          </div>
+          <button className="custom-button text-blacked text-sm font-primary font-normal">
+            The Transporters
+          </button>
           <span className="sub-heading">Meet Expert Team</span>
         </div>
 
@@ -51,7 +46,7 @@ const Team = () => {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="h-[400px] w-[275px]  md:w-[300px] flex flex-col relative"
+              className="h-[393px] w-[275px]  md:w-[300px] flex flex-col relative"
             >
               <div>
                 <img

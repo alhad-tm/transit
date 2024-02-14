@@ -48,14 +48,9 @@ const WhyUs = () => {
 
         <div className="w-4/5 min-h-screen mt-[-5rem] bg-white flex flex-col gap-8 lg:flex-row items-center justify-between p-4 lg:p-12">
           <div className="flex flex-col gap-4 w-full lg:w-1/2">
-            <div className="flex w-[150px] h-[30px]">
-              <div className="w-[4%] bg-yellow-gradient"></div>
-              <div className="bg-[#E8E8E880] flex justify-center items-center p-2">
-                <span className="text-blacked text-sm font-primary font-normal">
-                  Why us
-                </span>
-              </div>
-            </div>
+            <button className="custom-button text-blacked text-sm font-primary font-normal w-[105px]">
+              Why Us
+            </button>
 
             <span className="sub-heading text-left">
               We provide full range global logistics solution
@@ -98,12 +93,11 @@ const WhyUs = () => {
               1294
             </span>
             <div className="flex items-center justify-center gap-4">
-            <div className="bg-yellow-gradient w-5 h-5"></div>
-            <span className="text-xl font-normal text-blacked font-tertiary text-left">
-              Delivered Packages
-            </span>
-            </div> 
-           
+              <div className="bg-yellow-gradient w-5 h-5"></div>
+              <span className="text-xl font-normal text-blacked font-tertiary text-left">
+                Delivered Packages
+              </span>
+            </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full md:w-1/2 h-full">
@@ -111,12 +105,11 @@ const WhyUs = () => {
               3594
             </span>
             <div className="flex items-center justify-center gap-4">
-            <div className="bg-yellow-gradient w-5 h-5"></div>
-            <span className="text-xl font-normal text-blacked font-tertiary text-left">
-           Satisfied Clients
-            </span>
+              <div className="bg-yellow-gradient w-5 h-5"></div>
+              <span className="text-xl font-normal text-blacked font-tertiary text-left">
+                Satisfied Clients
+              </span>
             </div>
-           
           </div>
         </div>
 

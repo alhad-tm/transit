@@ -54,14 +54,9 @@ const WhyChoose = () => {
 
         <div className="w-full md:w-1/2 bg-[#F4F4F4] min-h-screen flex flex-col gap-8 items-center justify-center px-16 text-left py-6 md:py-0">
           <div className="flex flex-col gap-4">
-            <div className="flex w-[250px] h-[30px]">
-              <div className="w-[4%] bg-yellow-gradient"></div>
-              <div className="bg-[#E8E8E880] flex justify-center items-center p-2">
-                <span className="text-[#1C1F35] text-sm font-primary font-normal">
-                  Why choose
-                </span>
-              </div>
-            </div>
+            <button className="custom-button text-blacked text-sm font-primary font-normal w-[145px]">
+              Why Choose
+            </button>
 
             <span className="sub-heading">
               We create opportunity to reach potential

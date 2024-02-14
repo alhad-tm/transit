@@ -36,14 +36,9 @@ const About = () => {
     <div className="bg-white flex items-center justify-center w-full ">
       <div className="flex flex-col md:flex-row justify-between items-start max-w-max  py-12 text-blue-400 w-4/5">
         <div className="w-full md:w-[26%] flex flex-col gap-4 text-left h-full  md:items-start">
-          <div className="flex w-[150px] h-[30px]">
-            <div className="w-[4%] bg-yellow-gradient"></div>
-            <div className="bg-[#E8E8E880] flex items-center justify-center px-4">
-              <span className="text-[#1C1F35] text-sm font-primary font-normal text-left">
-                What We Do
-              </span>
-            </div>
-          </div>
+          <button className="custom-button text-blacked text-sm font-primary font-normal w-[145px]">
+            What We Do
+          </button>
 
           <span className="sub-heading">Safe & Reliable Cargo Solutions</span>
         </div>

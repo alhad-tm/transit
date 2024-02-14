@@ -38,14 +38,9 @@ const Testimonial = () => {
       <div className="flex flex-col gap-8 items-center justify-center w-4/5 max-w-max text-left">
         <div className="flex flex-col gap-4 md:flex-row items-center justify-between w-full">
           <div className="flex flex-col gap-4">
-            <div className="flex w-[250px] h-[30px]">
-              <div className="w-[2%] bg-yellow-gradient"></div>
-              <div className="bg-[#E8E8E880] flex items-center justify-center p-2">
-                <span className="text-[#1C1F35] text-sm font-primary font-normal">
-                  Testimonial
-                </span>
-              </div>
-            </div>
+            <button className="custom-button text-blacked text-sm font-primary font-normal w-[145px]">
+              Testimonial
+            </button>
             <span className="sub-heading">What Our Customer Say</span>
           </div>
           <div className="flex items-center gap-2">
@@ -63,7 +58,7 @@ const Testimonial = () => {
               <div className="flex justify-between">
                 <div className="flex gap-4 items-center ">
                   <img
-                  className="w-[60px] h-[60px] lg:w-auto lg:h-auto"
+                    className="w-[60px] h-[60px] lg:w-auto lg:h-auto"
                     src={testimonial.userImage}
                     alt={`user-${testimonial.id}`}
                   />
@@ -77,7 +72,11 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div>
-                  <img src={Quotes} alt="quotes" className="h-[30px] w-[40px] lg:h-auto lg:w-auto"/>
+                  <img
+                    src={Quotes}
+                    alt="quotes"
+                    className="h-[30px] w-[40px] lg:h-auto lg:w-auto"
+                  />
                 </div>
               </div>
 

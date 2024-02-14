@@ -61,14 +61,9 @@ const Blog = () => {
     <div className="flex items-center justify-center bg-white w-full min-h-screen py-12">
       <div className="flex flex-col items-center justify-center bg-white w-3/4 max-w-max min-h-screen gap-8">
         <div className="flex flex-col items-center justify-center gap-4">
-          <div className="flex w-[150px] h-[30px]">
-            <div className="w-[4%] bg-yellow-gradient"></div>
-            <div className="bg-[#E8E8E880] flex justify-center items-center p-2">
-              <span className="text-blacked text-sm font-primary font-normal">
-                Our Blog
-              </span>
-            </div>
-          </div>
+          <button className="custom-button text-blacked text-sm font-primary font-normal w-[105px]">
+            Our Blog
+          </button>
           <span className="sub-heading">Our Latest News</span>
         </div>
 
@@ -76,7 +71,7 @@ const Blog = () => {
           {blogPosts.map((post, index) => (
             <div
               key={post.id}
-              className="flex flex-col gap-6 md:flex-row items-center justify-between h-auto  border-y border-[#D6D6D6] py-8"
+              className="flex flex-col gap-6 md:flex-row items-center justify-between h-auto  md:border-y md:border-[#D6D6D6] py-4 md:py-8"
             >
               <div className="relative w-full md:w-[41%]">
                 <img
@@ -100,7 +95,7 @@ const Blog = () => {
                 <span>{post.month}</span>
               </div>
 
-              <div className="border-[#D6D6D6] border-l flex flex-col h-full w-full md:w-[41%] p-8 text-left">
+              <div className="md:border-[#D6D6D6] md:border-l flex flex-col gap-4 h-full w-full md:w-[41%] p-4 md:p-8 text-left">
                 <span
                   className={`text-2xl font-normal font-primary ${post.color}`}
                 >
@@ -109,7 +104,9 @@ const Blog = () => {
                 <span className="contents">{post.content}</span>
                 <ul className="list-disc text-[#1C1F35] font-secondary font-medium text-base ">
                   {post.points.map((point, index) => (
-                    <li key={index}>{point}</li>
+                    <li className="leading-[2rem]" key={index}>
+                      {point}
+                    </li>
                   ))}
                 </ul>
               </div>

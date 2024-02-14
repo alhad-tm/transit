@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="flex flex-col items-start justify-center w-full bg-[#091242] ">
         <div className="w-full  bg-[#091242] flex flex-col md:flex-row items-start justify-between pb-8">
           <div className="flex flex-col w-full  md:w-[7%]">
-            <div className="bg-white bg-opacity-10 h-[100px]"></div>
+            <div className="hidden md:flex bg-white bg-opacity-10 h-[100px]"></div>
             <div className=""></div>
           </div>
 

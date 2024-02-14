@@ -14,14 +14,12 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
           <div className="flex flex-col w-full md:w-1/3 ">
             <div className="flex flex-col text-left gap-2">
-              <div className="flex w-[150px] h-[30px]">
-                <div className="w-[4%] bg-yellow-gradient"></div>
-                <div className="bg-gray-200 bg-opacity-20 flex items-center justify-center p-2">
-                  <span className="text-white text-sm font-primary">
-                    Contact
-                  </span>
-                </div>
-              </div>
+              <button
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+                className="custom-button text-white text-sm font-primary w-[105px]"
+              >
+                Contact
+              </button>
 
               <span className="sub-heading-white">Get in touch with us</span>
 
