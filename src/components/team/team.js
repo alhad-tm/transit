@@ -33,7 +33,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="flex items-center justify-center bg-white w-full min-h-screen">
+    <div className="flex items-center justify-center bg-white w-full min-h-screen py-6">
       <div className="flex flex-col gap-8 items-center justify-center bg-white w-full min-h-screen max-w-max">
         <div className="flex flex-col items-center justify-center text-center gap-4">
           <div className="flex w-[150px] h-[30px]">
@@ -47,15 +47,15 @@ const Team = () => {
           <span className="sub-heading">Meet Expert Team</span>
         </div>
 
-        <div className="flex flex-col md:flex-row w-4/5 justify-between">
+        <div className="flex flex-col gap-6 md:flex-row w-4/5 md:w-[90%] lg:w-4/5 xl:w-[60%] justify-between items-center">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="h-[400px] w-full md:w-[30%] flex flex-col relative"
+              className="h-[400px] w-[275px]  md:w-[300px] flex flex-col relative"
             >
               <div>
                 <img
-                  className="h-[320px] w-full"
+                  className="h-[260px] w-full"
                   src={member.profileImage}
                   alt={`Profile ${member.id}`}
                 />
@@ -68,7 +68,7 @@ const Team = () => {
                   {member.position}
                 </span>
               </div>
-              <div className="flex gap-2 absolute bg-yellowed h-[40px] px-4 items-center justify-center right-0 bottom-[65px]">
+              <div className="flex gap-2 absolute bg-yellowed h-[40px] px-4 items-center justify-center right-0 bottom-[120px]">
                 {member.socialIcons.map((icon, index) => (
                   <img
                     key={index}

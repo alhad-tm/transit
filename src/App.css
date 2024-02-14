@@ -20,7 +20,7 @@
 }
 
 .sub-heading{
-  @apply font-primary font-semibold text-4xl text-black
+  @apply font-primary font-semibold text-3xl md:text-4xl text-black
 }
 .sub-heading-white{ 
   @apply font-primary font-semibold text-4xl text-white 
@@ -30,11 +30,26 @@
   @apply font-secondary font-medium text-base text-[#666C89]
 }
 
-.navlinks>span{
-  @apply w-1 h-5 text-white font-secondary text-base font-semibold
+.navlinks>span {
+  @apply  text-white font-secondary text-[14px]  md:text-[14px] font-medium md:font-semibold
 }
 
 .navline{
-  @apply bg-white bg-opacity-30 h-5 w-[1px] ml-8
+  @apply bg-white bg-opacity-30 h-5 w-[1px] 
 }
- 
+.header-icons{
+  @apply w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]
+}
+.icons{
+  @apply w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]
+}
+.header-spans{
+  @apply text-[11px] md:text-[11px] xl:text-sm font-secondary font-medium text-white
+
+}
+.padding{
+  @apply px-4 md:px-12 xl:px-20
+}
+.bgc{
+  background-color: rgba(4, 28, 55, .5);
+}

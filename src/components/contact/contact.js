@@ -55,9 +55,9 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 flex flex-col gap-4">
+          <div className="w-full md:w-1/2 flex flex-col gap-4 pb-8">
             <div className="mb-4 flex flex-col gap-8 md:gap-0 md:flex-row w-full">
-              <div className=" mr-2 w-1/2">
+              <div className=" mr-2 w-full md:w-1/2">
                 <input
                   className="w-full p-2 border border-[#4E5683] bg-transparent focus:outline-none text-white"
                   type="text"
@@ -65,7 +65,7 @@ const Contact = () => {
                   placeholder="Your Name*"
                 />
               </div>
-              <div className="ml-0 md:ml-2 w-1/2">
+              <div className="ml-0 md:ml-2 w-full md:w-1/2">
                 <input
                   className="w-full p-2 border border-[#4E5683] bg-transparent focus:outline-none text-white"
                   type="email"
@@ -76,7 +76,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-4 flex flex-col gap-8 md:gap-0 md:flex-row w-full">
-              <div className=" mr-2 w-1/2">
+              <div className=" mr-2 w-full md:w-1/2">
                 <input
                   className="w-full p-2 border border-[#4E5683] bg-transparent  focus:outline-none text-white"
                   type="tel"
@@ -84,7 +84,7 @@ const Contact = () => {
                   placeholder="Phone Number"
                 />
               </div>
-              <div className="ml-0 md:ml-2 w-1/2">
+              <div className="ml-0 md:ml-2 w-full md:w-1/2">
                 <input
                   className="w-full p-2 border border-[#4E5683] bg-transparent focus:outline-none text-white"
                   type="text"

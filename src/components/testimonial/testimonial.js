@@ -34,11 +34,11 @@ const testimonialData = [
 
 const Testimonial = () => {
   return (
-    <div className="flex items-center justify-center bg-white min-h-screen w-full">
+    <div className="flex items-center justify-center bg-white min-h-screen w-full py-8">
       <div className="flex flex-col gap-8 items-center justify-center w-4/5 max-w-max text-left">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full">
+        <div className="flex flex-col gap-4 md:flex-row items-center justify-between w-full">
           <div className="flex flex-col gap-4">
-            <div className="flex w-[350px] h-[30px]">
+            <div className="flex w-[250px] h-[30px]">
               <div className="w-[2%] bg-yellow-gradient"></div>
               <div className="bg-[#E8E8E880] flex items-center justify-center p-2">
                 <span className="text-[#1C1F35] text-sm font-primary font-normal">
@@ -54,15 +54,16 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between w-full ">
+        <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between w-full ">
           {testimonialData.map((testimonial) => (
             <div
               key={testimonial.id}
-              className={`w-full md:w-1/2 h-[350px] flex flex-col justify-around p-8 ${testimonial.color}`}
+              className={`w-full md:w-1/2 lg:h-[350px] py-8 flex flex-col gap-4  justify-around p-8 ${testimonial.color}`}
             >
               <div className="flex justify-between">
                 <div className="flex gap-4 items-center ">
                   <img
+                  className="w-[60px] h-[60px] lg:w-auto lg:h-auto"
                     src={testimonial.userImage}
                     alt={`user-${testimonial.id}`}
                   />
@@ -76,11 +77,11 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div>
-                  <img src={Quotes} alt="quotes" />
+                  <img src={Quotes} alt="quotes" className="h-[30px] w-[40px] lg:h-auto lg:w-auto"/>
                 </div>
               </div>
 
-              <span className="text-base font-medium font-secondary text-[#666C89] italic">
+              <span className="text-[14px] md:text-base font-medium font-secondary text-[#666C89] italic">
                 {testimonial.quote}
               </span>
 

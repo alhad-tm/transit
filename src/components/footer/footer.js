@@ -27,20 +27,20 @@ const Footer = () => {
               <img src={Logo} />
             </div>
 
-            <span className="text-base text-white font-medium font-secondary text-left">
+            <span className="text-[14px] lg:text-base text-white font-medium font-secondary text-left">
               Leverage agile frameworks to provide a robust synopsis for
               strategy collaborative thinking to further the overall value
               proposition.
             </span>
 
             <div className="flex items-center gap-2 text-left">
-              <img src={Mail} className="w-[50px] h-[50px]" />
+              <img src={Mail} className="header-icons" alt="phone"/>
               <span className="font-secondary text-white text-sm font-medium">
                 Email <br /> contact@logistics.com
               </span>
             </div>
-            <div className="flex items-center gap-2 text-left">
-              <img src={Phone} className="w-[50px] h-[50px]" />
+            <div className="flex items-center gap-2 text-left pb-4">
+              <img src={Phone} className="header-icons" alt="phone"/>
               <span className="font-secondary text-white text-sm font-medium">
                 Call Us <br /> (00) 112 365 489
               </span>
@@ -54,7 +54,7 @@ const Footer = () => {
               </span>
             </div>
 
-            <span className="font-secondary text-white text-base font-medium leading-10 ml-8 text-left">
+            <span className="font-secondary text-white text-[14px] lg:text-[16px] font-medium leading-10 ml-8 text-left">
               About Us <br />
               Our Team <br />
               Our Project <br />
@@ -70,8 +70,8 @@ const Footer = () => {
               </span>
             </div>
 
-            <span className="font-secondary text-white text-base font-medium leading-10 ml-8 text-left">
-              Style Guide <br />
+            <span className="font-secondary text-white text-[14px] lg:text-[16px] font-medium leading-10 ml-8 text-left ">
+              Style Guide <br /> 
               Changelog <br />
               Licenses <br />
               Protected <br />
@@ -96,7 +96,7 @@ const Footer = () => {
                 />
               </div>
 
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                 <button
                   className="flex items-center justify-center  w-[164px] h-[50px] bg-yellow-gradient hover:bg-blue-700 text-blacked  text-base  font-semibold  py-2 px-4 rounded-md "
                   type="submit"
@@ -104,7 +104,7 @@ const Footer = () => {
                   Sent Now
                 </button>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-8 lg:gap-2">
                   <img src={Linkedin} alt="instagram" />
                   <img src={Twitter} alt="Twitter" />
                   <img src={Fb} alt="fb" />
@@ -114,13 +114,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between w-full border-t border-[#4E5683] py-8 px-24">
-          <span className="text-white font-secondary font-normal text-base">
+        <div className="flex flex-col gap-4 lg:flex-row items-center lg:items-start justify-between w-full border-t border-[#4E5683] py-8 padding">
+          <span className="text-white font-secondary font-normal text-base lg:text-left w-full lg:w-1/2">
             Copyright © TransitFlow | Designed by VictorFlow - Powered by
             Webflow.
           </span>
 
-          <div className="flex items-center justify-between gap-8 text-[#8388A7] text-base font-secondary font-normal">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-8 text-[#8388A7] text-base font-secondary font-normal">
             <span>Style Guide </span>
             <span> Licenses </span>
             <span> Changelog </span>

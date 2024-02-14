@@ -5,24 +5,24 @@ import Header from "../header/header";
 const Banner = () => {
   return (
     <div
-      className=" flex items-center justify-center w-full bg-center bg-cover relative mt-[15rem] md:mt-20"
+      className=" flex items-center justify-center w-full bg-center bg-cover relative mt-[15rem] md:mt-28"
       style={{ backgroundImage: `url(${BannerBg})` }}
     >
-      <div className="absolute top-[-15rem] md:top-[-5rem] w-full ">
+      <div className="absolute top-[-15rem] md:top-[-7rem] w-full ">
         <Header />
       </div>
-      <div className="flex items-center max-w-max w-full min-h-screen mt-12">
-        <div className="flex flex-col gap-2 items-start justify-center w-full md:w-2/5 pl-8 md:pl-24 text-left">
-          <div className=" h-[40px]  flex items-between">
+      <div className="flex items-center max-w-max w-[90%] min-h-screen md:mt-20 xl:mt-12 md:py-8">
+        <div className="flex flex-col gap-4 items-start justify-center w-full md:w-1/2 pl-4 md:pl-24 text-left">
+          <div className=" h-[40px]  flex items-between mt-24">
             <div className="w-2 bg-yellow-gradient"> </div>
-            <div className="px-4 bg-white bg-opacity-10 flex items-center justify-center">
-              <span className="font-primary  text-base text-white">
+            <div className="px-4 bgc flex items-center justify-center">
+              <span className="font-primary  text-[14px] text-white">
                 Logistics & Supply Chain Solutions
               </span>
             </div>
           </div>
 
-          <span className=" text-2xl md:text-6xl text-white font-primary font-bold leading-[20px] md:leading-[71px]">
+          <span className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-primary font-bold leading-[34px] md:leading-[51px] lg:leading-[61px] xl:leading-[71px]">
             Your Gateway to any Destination in the World
           </span>
 
